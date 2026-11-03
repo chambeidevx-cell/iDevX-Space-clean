@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/idevx-new-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!--
+      viewport-fit=cover lets the page paint into the rounded corners and under
+      the home indicator — and is what makes env(safe-area-inset-*) report a
+      real value. Without it those insets are always 0, so anything pinned to
+      the bottom cannot tell where the indicator is. Every bottom-fixed element
+      adds the inset back; see SAFE_AREA_BOTTOM in constants/layout.ts.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>iDevX Space</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
